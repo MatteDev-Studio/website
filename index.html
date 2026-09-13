@@ -49,10 +49,22 @@
         <div class="nav-links">
             <a href="/index.html" class="active">Home</a>
             <a href="https://platform.mattedev.com" target="_blank" rel="noopener noreferrer">Platform</a>
-            <a href="/pages/servizi.html">Servizi</a>
-            <a href="/pages/staff.html">Staff & Partners</a>
-            <a href="/pages/staffapp.html">Lavora con noi</a>
-            <a href="mailto:official@mattedev.com">Contatti</a>
+
+            <details class="nav-dropdown">
+                <summary class="nav-dropdown-trigger">
+                    <span>Altro</span>
+                    <svg class="nav-dropdown-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </summary>
+                <div class="nav-dropdown-menu">
+                    <a href="/pages/servizi.html">Servizi</a>
+                    <a href="/pages/staff.html">Staff & Partners</a>
+                    <a href="/pages/staffapp.html">Lavora con noi</a>
+                    <a href="/pages/contatti.html">Contatti</a>
+                    <a href="/support/">Supporto</a>
+                </div>
+            </details>
         </div>
     </nav>
 
@@ -77,17 +89,38 @@
                 </div>
             </section>
 
-            <!-- ═══ PLATFORM SPOTLIGHT ═══ -->
-            <section class="spotlight-section">
-                <a href="https://platform.mattedev.com" class="spotlight-card">
-                    <div class="spotlight-badge">Il nostro HUB</div>
-                    <h2>MatteDev Platform</h2>
-                    <p>Il punto di accesso unico a tutti i nostri servizi. Gestisci il tuo account, scopri le nostre web app e scarica i nostri software nativi in modo semplice e veloce.</p>
-                    <div class="spotlight-cta">
-                        <span>Apri Platform</span>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+                        <!-- ═══ LA NOSTRA STORIA ═══ -->
+        <section class="story-section">
+            <article class="story-card">
+                <span class="story-badge">LA NOSTRA STORIA</span>
+                <div class="story-layout">
+                    <div class="story-content">
+                        <h2>La Nostra Storia</h2>
+                        <p>Da una piccola idea nasce un ecosistema aperto, creativo e condiviso. MatteDev Studio è nato nel 2025 come progetto open source dedicato alla sperimentazione e alla crescita della community digitale.</p>
+                        <a href="/pages/timeline.html" class="story-button">Scopri di più →</a>
                     </div>
-                    <div class="spotlight-glow"></div>
+                    <div class="story-image">
+                        <img src="https://media.mattedev.com/img/landing/story.jpg" alt="La Nostra Storia" />
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- ═══ STAFF ═══ -->
+            <section class="horizontal-card-section">
+                <a href="pages/staff.html" class="horizontal-card">
+                    <div class="hcard-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <div class="hcard-body">
+                        <span class="hcard-kicker">Chi siamo</span>
+                        <h3>Staff & Partners</h3>
+                        <p>Incontra il team dietro MatteDev e scopri le compagnie e i partner che collaborano con noi per espandere il nostro orizzonte.</p>
+                    </div>
+                    <div class="hcard-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
                 </a>
             </section>
 
@@ -119,22 +152,22 @@
 
             </section>
 
-            <!-- ═══ STAFF ═══ -->
-            <section class="horizontal-card-section">
-                <a href="pages/staff.html" class="horizontal-card">
-                    <div class="hcard-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+
+             <!-- ═══ PLATFORM SPOTLIGHT ═══ -->
+            <section class="spotlight-section">
+                <a href="https://platform.mattedev.com" class="spotlight-card">
+                    <div class="spotlight-badge">Il nostro HUB</div>
+                    <h2>MatteDev Platform</h2>
+                    <p>Il punto di accesso unico a tutti i nostri servizi. Gestisci il tuo account, scopri le nostre web app e scarica i nostri software nativi in modo semplice e veloce.</p>
+                    <div class="spotlight-cta">
+                        <span>Apri Platform</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </div>
-                    <div class="hcard-body">
-                        <span class="hcard-kicker">Chi siamo</span>
-                        <h3>Staff & Partners</h3>
-                        <p>Incontra il team dietro MatteDev e scopri le compagnie e i partner che collaborano con noi per espandere il nostro orizzonte.</p>
-                    </div>
-                    <div class="hcard-arrow">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </div>
+                    <div class="spotlight-glow"></div>
                 </a>
             </section>
+
+            
 
             <!-- ═══ SERVIZI ═══ -->
             <section class="services-section">
@@ -174,7 +207,33 @@
                 </div>
             </section>
 
-            
+            <!-- ═══ PROGETTI ═══ -->
+            <section class="projects-section">
+                <div class="services-header">
+                    <span class="kicker">Progetti</span>
+                    <h2>I nostri progetti</h2>
+                </div>
+                <div class="projects-grid">
+                    <a href="https://platform.mattedev.com" target="_blank" rel="noopener noreferrer" class="project-card platform-card">
+                        <span class="project-card-tag">Platform</span>
+                        <h3>MatteDev Platform</h3>
+                        <p>Il tuo hub centralizzato per servizi, strumenti e account.</p>
+                        <span class="project-card-link">Apri Platform →</span>
+                    </a>
+                    <a href="https://ai.mattedev.com" target="_blank" rel="noopener noreferrer" class="project-card ai-card">
+                        <span class="project-card-tag">AI</span>
+                        <h3>MatteDev AI</h3>
+                        <p>Modelli e strumenti intelligenti per creare flussi di lavoro veloci.</p>
+                        <span class="project-card-link">Vai a AI →</span>
+                    </a>
+                    <a href="https://quill.mattedev.com" target="_blank" rel="noopener noreferrer" class="project-card quill-card">
+                        <span class="project-card-tag">Open Source</span>
+                        <h3>Quill</h3>
+                        <p>Editor leggero e moderno per scrivere in modo semplice.</p>
+                        <span class="project-card-link">Apri Quill →</span>
+                    </a>
+                </div>
+            </section>
 
         </main>
 
@@ -190,7 +249,8 @@
             <a href="staff.html">Staff & Partners</a>
             <a href="/pages/staffapp.html">Entra nel Team</a>
             <a href="https://open.mattedev.com" target="_blank">Open Source</a>
-            <a href="mailto:official@mattedev.com">Contatti</a>
+            <a href="/pages/contatti.html">Contatti</a>
+            <a href="/support/">Supporto</a>
         </div>
         <div class="footer-links-col">
             <span class="footer-col-title">Prodotti</span>

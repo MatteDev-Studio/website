@@ -61,9 +61,21 @@ document.addEventListener("DOMContentLoaded", function() {
         <div class="nav-links">
             <a href="/index.html" >Home</a>
             <a href="https://platform.mattedev.com" target="_blank" rel="noopener noreferrer">Platform</a>
-            <a href="/pages/staff.html" class="active">Staff & Partners</a>
-            <a href="/pages/staffapp.html">Lavora con noi</a>
-            <a href="mailto:official@mattedev.com">Contatti</a>
+            <details class="nav-dropdown">
+                <summary class="nav-dropdown-trigger">
+                    <span>Altro</span>
+                    <svg class="nav-dropdown-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </summary>
+                <div class="nav-dropdown-menu">
+                    <a href="/pages/servizi.html">Servizi</a>
+                    <a href="/pages/staff.html" class="active">Staff & Partners</a>
+                    <a href="/pages/staffapp.html">Lavora con noi</a>
+                    <a href="/pages/contatti.html">Contatti</a>
+                    <a href="/support/">Supporto</a>
+                </div>
+            </details>
         </div>
     </nav>
 
@@ -144,7 +156,8 @@ document.addEventListener("DOMContentLoaded", function() {
             <a href="/pages/staff.html">Staff & Partners</a>
             <a href="/pages/staffapp.html">Entra nel Team</a>
             <a href="https://open.mattedev.com" target="_blank">Open Source</a>
-            <a href="mailto:official@mattedev.com">Contatti</a>
+            <a href="/pages/contatti.html">Contatti</a>
+            <a href="/support/">Supporto</a>
         </div>
         <div class="footer-links-col">
             <span class="footer-col-title">Prodotti</span>
