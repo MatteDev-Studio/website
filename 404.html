@@ -3,52 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Pagina non trovata | MatteDev</title>
-    <meta name="description" content="La pagina che stai cercando non esiste o è stata spostata. Torna alla home di MatteDev o visita i progetti.">
+    <meta name="robots" content="noindex">
+    <title>404 — Pagina non trovata | MatteDev Studio</title>
+    <meta name="description" content="La pagina che cerchi non è disponibile. Torna alla home o esplora i contributi di MatteDev Studio.">
     <link rel="stylesheet" href="/media/style.css">
-
-    <link href="/media/404.css" rel="stylesheet">
+    <link rel="stylesheet" href="/media/404.css">
 </head>
 <body>
-    <section class="error-page">
-        <nav>
-            <div class="nav-logo">MatteDev</div>
-            <div class="nav-links">
-                <a href="/index.html">Home</a>
-            </div>
-        </nav>
-
-        <main class="error-panel">
-            <p class="error-code">Errore 404</p>
-            <h1 class="hero-title error-title"><span class="highlight">Pagina non trovata</span></h1>
-            <p class="error-text">
-                Il link che hai aperto non punta a una pagina valida. Può essere stato spostato, rinominato
-                oppure non essere mai esistito.
-            </p>
-            <div class="error-actions">
-                <a class="error-button primary" href="index.html">Torna alla Home</a>
-            </div>
-            <p class="error-hint">MatteDev continua da qui: scegli una destinazione e ripartiamo.</p>
-        </main>
-    </section>
-
-    <footer class="footer">
-        <p>&copy; MatteDev • 2026</p>
-        <p>Costruendo il futuro, una riga di codice alla volta.</p>
-        <a href="https://privacy.mattedev.com/">Privacy Policy</a> | <a href="https://privacy.mattedev.com/privacy.html">Terms of Service</a>
-        <div class="error-lookup">
-            <span class="error-lookup-title">Forse stai cercando anche</span>
-            <div class="error-lookup-grid">
-                <a href="/support/" class="error-lookup-card">
-                    <span class="error-card-icon">✦</span>
-                    <span class="error-card-text">Supporto</span>
-                </a>
-                <a href="/pages/staffapp.html" class="error-lookup-card">
-                    <span class="error-card-icon">✎</span>
-                    <span class="error-card-text">Staff Application</span>
-                </a>
-            </div>
+    <nav class="site-nav" aria-label="Navigazione principale">
+        <div class="nav-logo" aria-label="MatteDev Studio">
+            <a href="/" class="nav-brand-link" aria-label="Torna alla home di MatteDev Studio">
+                <img src="https://media.mattedev.com/img/mlogo.jpg" alt="" class="nav-brand-logo" loading="eager">
+            </a>
+            <span class="nav-brand-text">MatteDev Studio</span>
         </div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/pages/contributi.html">Contributi</a>
+            <a href="/support/">Supporto</a>
+        </div>
+    </nav>
+
+    <main class="not-found">
+        <div class="not-found-content">
+            <span class="not-found-label"><span class="status-dot" aria-hidden="true"></span> PAGINA NON TROVATA</span>
+            <p class="not-found-code" aria-hidden="true">404</p>
+            <h1>Questa pagina<br><em>non c’è.</em></h1>
+            <p class="not-found-text">Il link potrebbe essere errato o la pagina potrebbe essere stata spostata.</p>
+            <div class="not-found-actions">
+                <a class="btn-primary-hero" href="/">Torna alla home <span aria-hidden="true">↗</span></a>
+                <a class="btn-ghost-hero" href="/pages/contributi.html">Esplora i contributi</a>
+            </div>
+            <a class="not-found-support" href="/support/">Hai bisogno di aiuto? Visita il supporto <span aria-hidden="true">↗</span></a>
+        </div>
+        <span class="not-found-orbit not-found-orbit-one" aria-hidden="true"></span>
+        <span class="not-found-orbit not-found-orbit-two" aria-hidden="true"></span>
+    </main>
+
+    <footer class="not-found-footer">
+        <a href="/" class="not-found-wordmark">MatteDev Studio<span>.</span></a>
+        <span>&copy; 2026 MatteDev Studio</span>
     </footer>
 </body>
 </html>

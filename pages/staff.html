@@ -3,63 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MatteDev - Staff & Partners</title>
+    <title>Staff & Partners | MatteDev Studio</title>
+    <meta name="description" content="Incontra il team e i partner di MatteDev Studio.">
+    <link rel="canonical" href="https://mattedev.com/pages/staff.html">
     <link rel="stylesheet" href="/media/style.css">
-  
-<script>
-    let targetUrl = "";
-
-function openPopup(url) {
-    targetUrl = url;
-    document.getElementById('popupUrlText').innerText = url;
-    document.getElementById('redirectPopup').style.display = 'flex';
-}
-
-function closePopup() {
-    document.getElementById('redirectPopup').style.display = 'none';
-}
-
-// ⚠️ AVVOLGI QUESTA PARTE COSÌ:
-document.addEventListener("DOMContentLoaded", function() {
-    
-    // Ora JavaScript troverà sicuramente il pulsante
-    document.getElementById('confirmRedirectBtn').addEventListener('click', function() {
-        if (targetUrl) {
-            window.open(targetUrl, '_blank', 'noopener,noreferrer');
-            closePopup();
-        }
-    });
-
-    // Chiude il popup se l'utente clicca fuori dalla scatola bianca
-    window.onclick = function(event) {
-        let popup = document.getElementById('redirectPopup');
-        if (event.target == popup) {
-            closePopup();
-        }
-    }
-    
-});
-</script>
 </head>
 <body>
-
-<nav class="site-nav">
-    <meta name="description" content="Incontra lo staff e i partner di MatteDev Studio. Scopri il nostro team, le competenze e le opportunità di collaborazione.">
-    <link rel="canonical" href="/pages/staff.html">
-    <!-- Open Graph -->
-    <meta property="og:title" content="Lo Staff — MatteDev Studio">
-    <meta property="og:description" content="Incontra lo staff e i partner di MatteDev Studio. Scopri il nostro team, le competenze e le opportunità di collaborazione.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="/pages/staff.html">
-    <meta property="og:image" content="https://media.mattedev.com/img/mlogo.jpg">
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lo Staff — MatteDev Studio">
-    <meta name="twitter:description" content="Incontra lo staff e i partner di MatteDev Studio. Scopri il nostro team, le competenze e le opportunità di collaborazione.">
-    <meta name="twitter:image" content="https://media.mattedev.com/img/mlogo.jpg">
-        <div class="nav-logo">MatteDev Studio</div>
+    <nav class="site-nav" aria-label="Navigazione principale">
+        <div class="nav-logo" aria-label="MatteDev Studio home">
+            <a href="/index.html" class="nav-brand-link" aria-label="Torna alla home di MatteDev Studio">
+                <img src="https://media.mattedev.com/img/mlogo.jpg" alt="" class="nav-brand-logo" loading="eager">
+            </a>
+            <span class="nav-brand-text">MatteDev Studio</span>
+        </div>
         <div class="nav-links">
-            <a href="/index.html" >Home</a>
+            <a href="/index.html">Home</a>
+            <a href="/pages/contributi.html">Contributi</a>
             <a href="https://platform.mattedev.com" target="_blank" rel="noopener noreferrer">Platform</a>
             <details class="nav-dropdown">
                 <summary class="nav-dropdown-trigger">
@@ -70,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 </summary>
                 <div class="nav-dropdown-menu">
                     <a href="/pages/servizi.html">Servizi</a>
+                    <a href="/pages/timeline.html">La nostra storia</a>
                     <a href="/pages/staff.html" class="active">Staff & Partners</a>
-                    <a href="/pages/staffapp.html">Lavora con noi</a>
                     <a href="/pages/contatti.html">Contatti</a>
                     <a href="/support/">Supporto</a>
                 </div>
@@ -79,106 +38,93 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
     </nav>
 
-<main class="staff-section">
-    <h1 class="staff-h1">Lo Staff</h1>
-    <p class="staff-p">Le menti dietro MatteDev Studio.</p>
+    <div class="page-shell">
+        <main class="people-page">
+            <header class="people-hero">
+                <span class="kicker">Le persone dietro i progetti</span>
+                <h1>Un team piccolo.<br><em>Idee grandi.</em></h1>
+                <p>Le persone e le realtà che danno forma a MatteDev Studio.</p>
+            </header>
 
-    <h2 style="margin-top: 50px;">Core Team</h2>
+            <section class="people-section" aria-labelledby="team-title">
+                <div class="section-title-line">
+                    <div>
+                        <span class="section-eyebrow">01 / Il team</span>
+                        <h2 id="team-title">Core team</h2>
+                    </div>
+                </div>
+                <div class="people-grid">
+                    <article class="staff-card">
+                        <img src="https://media.mattedev.com/img/mlogo.jpg" alt="Logo di MatteDev" loading="lazy">
+                        <span class="people-role">Founder · Lead Developer</span>
+                        <h3>Matte</h3>
+                        <a href="https://guns.lol/mattedev" class="text-link" target="_blank" rel="noopener noreferrer">Profilo <span aria-hidden="true">↗</span></a>
+                    </article>
+                    <article class="staff-card">
+                        <img src="/media/anto.png" alt="Anto L." loading="lazy">
+                        <span class="people-role">Founder · Cybersecurity</span>
+                        <h3>Anto L.</h3>
+                        <a href="https://guns.lol/4nt0" class="text-link" target="_blank" rel="noopener noreferrer">Profilo <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+            </section>
 
-<div class="staff-grid">
-    
-    <article class="staff-card">
-        <img src="https://media.mattedev.com/img/mlogo.jpg" alt="Founder">
-        <h3>Matte</h3>
-        <p>Founder & Lead Developer</p>
-        <button onclick="openPopup('https://guns.lol/mattedev')" class="btn-link">Visualizza Profilo</button>
-    </article>
+            <section class="people-section" aria-labelledby="partners-title">
+                <div class="section-title-line">
+                    <div>
+                        <span class="section-eyebrow">02 / Collaborazioni</span>
+                        <h2 id="partners-title">Partner & network</h2>
+                    </div>
+                </div>
+                <div class="people-grid">
+                    <a href="https://aurastudioitalia.it" class="staff-card partner-card" target="_blank" rel="noopener noreferrer">
+                        <img src="https://aurastudioitalia.it/images/aura.jpg" alt="Aura Studio Italia" loading="lazy">
+                        <span class="people-role">Partner tecnologico</span>
+                        <h3>Aura Studio Italia</h3>
+                        <span class="text-link">Scopri il partner <span aria-hidden="true">↗</span></span>
+                    </a>
+                    <a href="https://myphoto-org.mattedev.com" class="staff-card partner-card" target="_blank" rel="noopener noreferrer">
+                        <img src="/media/myphoto.png" alt="MyPhoto.pics" loading="lazy">
+                        <span class="people-role">Nel gruppo da aprile 2026</span>
+                        <h3>MyPhoto.pics</h3>
+                        <span class="text-link">Scopri il progetto <span aria-hidden="true">↗</span></span>
+                    </a>
+                </div>
+            </section>
 
-    <article class="staff-card">
-        <img src="/media/anto.png" alt="Founder">
-        <h3>Anto L.</h3>
-        <p>Founder & Cybersecurity Specialist.</p>
-        <button onclick="openPopup('https://guns.lol/4nt0')" class="btn-link">Visualizza Profilo</button>
-    </article>
+        </main>
 
-</div> <div id="redirectPopup" class="popup-overlay">
-    <div class="popup-content">
-        <h3>Stai per lasciare il sito</h3>
-        <p>Verrai reindirizzato a un link esterno non affiliato: <br><strong id="popupUrlText"></strong></p>
-        <div class="popup-buttons">
-            <button onclick="closePopup()" class="btn-cancel">Annulla</button>
-            <button id="confirmRedirectBtn" class="btn-confirm">Procedi a mio rischio</button>
-        </div>
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="footer-logo">MatteDev Studio<span>.</span></div>
+                    <p>Idee digitali. Fatte bene.</p>
+                </div>
+                <div class="footer-links-col">
+                    <span class="footer-col-title">Studio</span>
+                    <a href="/pages/contributi.html">I nostri contributi</a>
+                    <a href="/pages/timeline.html">La nostra storia</a>
+                    <a href="/pages/staff.html">Staff & Partners</a>
+                    <a href="/pages/contatti.html">Contatti</a>
+                </div>
+                <div class="footer-links-col">
+                    <span class="footer-col-title">Esplora</span>
+                    <a href="/pages/servizi.html">Servizi</a>
+                    <a href="https://platform.mattedev.com" target="_blank" rel="noopener noreferrer">Platform</a>
+                    <a href="https://open.mattedev.com" target="_blank" rel="noopener noreferrer">Open Source</a>
+                    <a href="/support/">Supporto</a>
+                </div>
+                <div class="footer-links-col">
+                    <span class="footer-col-title">Legale</span>
+                    <a href="https://privacy.mattedev.com/" target="_blank" rel="noopener noreferrer">Centro Legale</a>
+                    <a href="https://privacy.mattedev.com/privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MatteDev Studio. Tutti i diritti riservati.</p>
+                <a href="mailto:official@mattedev.com">official@mattedev.com</a>
+            </div>
+        </footer>
     </div>
-</div>
-</div>
-
-<!-- CTA: candidati -->
-<section style="text-align:center; margin:40px 0 10px;">
-    <a href="/pages/staffapp.html" class="apply-cta">Vuoi far parte di MatteDev Studio? Candidati ora →</a>
-</section>
-    </div>
-</div>
-        </div>
-
-    <h2 style="margin-top: 50px;">Acquisizioni & Partner</h2>
-    <div class="staff-grid">
-       <a href="https://aurastudioitalia.it" class="staff-card" target="_blank" rel="noopener noreferrer">
-    <div style="font-size: 2rem; margin-bottom: 10px;">
-        <img src="https://aurastudioitalia.it/images/aura.jpg" alt="aura">
-    </div>
-    <h3>Aura Studio Italia</h3>
-    <p>Partner Tecnologico - Aura Chat - Collaborazione</p>
-    <span class="partner-badge">Partner Ufficiale</span>
-</a>
-
-<a href="https://myphoto-org.netlify.app" class="staff-card" target="_blank" rel="noopener noreferrer">
-    <div style="font-size: 2rem; margin-bottom: 10px;">
-        <img src="https://myphoto-org.netlify.app/media/logo2.png" alt="myphoto">
-    </div>
-    <h3>MyPhoto.pics</h3>
-    <p>Studio di fotografia acquisito ad Aprile 2026</p>
-    <span class="partner-badge" style="background: #e74c3c;">Acquisizione</span>
-</a>
-    </div>
-</main>
-
-<div class="page-shell">
-
-<footer class="footer">
-    <div class="footer-inner">
-        <div class="footer-brand">
-            <div class="footer-logo">MatteDev Studio</div>
-            <p>Innovazione costante,<br>una riga di codice alla volta.</p>
-        </div>
-        <div class="footer-links-col">
-            <span class="footer-col-title">Studio</span>
-            <a href="/pages/staff.html">Staff & Partners</a>
-            <a href="/pages/staffapp.html">Entra nel Team</a>
-            <a href="https://open.mattedev.com" target="_blank">Open Source</a>
-            <a href="/pages/contatti.html">Contatti</a>
-            <a href="/support/">Supporto</a>
-        </div>
-        <div class="footer-links-col">
-            <span class="footer-col-title">Prodotti</span>
-            <a href="https://platform.mattedev.com" target="_blank">Platform</a>
-            <a href="https://ai.mattedev.com" target="_blank">MatteDev AI</a>
-            <a href="https://quill.mattedev.com" target="_blank">Quill</a>
-        </div>
-        <div class="footer-links-col">
-            <span class="footer-col-title">Legale</span>
-            <a href="https://privacy.mattedev.com/" target="_blank">Centro Legale</a>
-            <a href="https://privacy.mattedev.com/privacy.html" target="_blank">Privacy Policy</a>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2026 MatteDev Studio. Tutti i diritti riservati.</p>
-    </div>
-</footer>
-
-</div>
-
-</body>
-</html>
 </body>
 </html>

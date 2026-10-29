@@ -104,7 +104,9 @@
             outline-offset: -2px;
         }
 
-        button {
+        button,
+        .home-button {
+            display: inline-block;
             padding: 10px 20px;
             background-color: var(--accent-color);
             color: var(--bg-color);
@@ -114,9 +116,11 @@
             font-weight: 600;
             cursor: pointer;
             border-radius: 0;
+            text-decoration: none;
         }
 
-        button:hover {
+        button:hover,
+        .home-button:hover {
             opacity: 0.9;
         }
 
@@ -147,8 +151,7 @@
         
         <p>Il sito di MatteDev Studio si sta facendo più bello. Pagina in fase di sviluppo.</p>
 
-        <a href="/index.html" style="text-decoration:none;">
-            <button>Torna alla Home</button>
+        <a href="/index.html" class="home-button">Torna alla Home</a>
 
         <footer>
             &copy; 2026 MatteDev Studio. Tutti i diritti riservati.
